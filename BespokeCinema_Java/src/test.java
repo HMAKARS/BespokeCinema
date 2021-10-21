@@ -4,7 +4,12 @@ public class test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("HI");
+		
 		System.out.println("BYE");
-	}
 
+	  System.out.println("OK");
+
+	}
 }
+	
+
