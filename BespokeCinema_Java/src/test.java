@@ -10,6 +10,7 @@ public class test {
 		
 
 		System.out.println("BYE");
+		System.out.println("Ä¿¹ÔÇª½Ã ¿¬½ÀÇÏ±â");
 
 	  System.out.println("OK");
 	}
