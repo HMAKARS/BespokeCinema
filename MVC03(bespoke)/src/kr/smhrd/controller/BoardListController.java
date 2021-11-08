@@ -18,7 +18,7 @@ public class BoardListController implements Controller{
 		List<BoardVO> list=dao.boardList();
 		request.setAttribute("list", list);//중요    
 		// View의 경로를 만들어서 문자열로 리턴해주는 역할
-		return "boardList"; // ViewResolver 부터 수업~
+		return "boardList"; 
     }
 }
 

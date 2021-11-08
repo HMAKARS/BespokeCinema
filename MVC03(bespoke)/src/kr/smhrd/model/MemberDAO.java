@@ -1,20 +1,26 @@
 package kr.smhrd.model;
 
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 
 public class MemberDAO {
-
 	
-	SqlSessionFactory sessionf = kr.smhrd.mybatis.SqlMapConfig.getSqlMapInstance();
-	SqlSession sqlsession; 
 	
-	public MemberDAO() {
-		
-		sqlsession = sessionf.openSession(true); //true 로 할시 자동 commit
-		
+	
+	
+	static {
+		try {
+			String resource = "kr/smhrd/mybatis/config.xml";
+			InputStream inputStream=Resources.getResourceAsStream(resource);
+			sqlSessionFactory=new SqlSessionFactoryBuilder().build(inputStream);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public int insertjoin(MemberVO dto) {
@@ -23,5 +29,11 @@ public class MemberDAO {
 		
 		return result;
 	}
+//	public UserVO isLogin(UserVO vo) {
+//		SqlSession session=sqlSessionFactory.openSession();
+//		vo=session.selectOne("isLogin",vo);
+//		session.close();
+//		return vo;
+//	}
 
 }

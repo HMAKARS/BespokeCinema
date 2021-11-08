@@ -14,18 +14,19 @@ import javax.servlet.http.HttpServletResponse;
 import kr.smhrd.model.MemberDAO;
 import kr.smhrd.model.MemberVO;
  
-public class MemberController extends HttpServlet{
- 
- @Override
- protected void doPost(HttpServletRequest req, HttpServletResponse resp)
- throws ServletException, IOException {
- 
- req.setCharacterEncoding("UTF-8");
- //req.setCharacterEncoding("EUC-KR");
- //한글처리
- 
- MemberVO dto = new MemberVO();
- MemberDAO dao = new MemberDAO();
+public class MemberController implements Controller{
+	public String requestHandler(HttpServletRequest req, HttpServletResponse resp)
+			 throws ServletException, IOException {
+
+		 MemberVO dto = new MemberVO();
+		 MemberDAO dao = new MemberDAO();
+		
+		 //Member<MemberVO> member=dao.regmember();
+		//request.setAttribute("",);
+		return "";
+	
+	}
+}
  PrintWriter out = resp.getWriter();
  int result;
  
