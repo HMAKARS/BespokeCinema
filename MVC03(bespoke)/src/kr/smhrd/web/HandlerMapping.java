@@ -17,7 +17,7 @@ public class HandlerMapping {
 		mappings.put("/boardContent.do", new BoardContentController());
 		mappings.put("/boardUpdate.do", new BoardUpdateController());
 		mappings.put("/boardDelete.do", new BoardDeleteController());
-		mappings.put("/regMember.do", new MemberController());
+		
 		mappings.put("/login.do", new LoginController());		
 		mappings.put("/logout.do", new LogoutController());		
 	}
