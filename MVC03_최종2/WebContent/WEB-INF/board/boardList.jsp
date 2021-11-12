@@ -103,6 +103,25 @@
     <div class="panel-footer">인공지능 융합 서비스 개발자과정(최선주)
     
     <button type="button" class="btn btn-success btn-sm" onclick="location.href='<%=cpath%>/memberForm.do'">회원가입하기</button>
+    
+    
+    
+    <form action="<%=cpath%>/reviewList.do" method="post">
+     
+    <input type="submit">
+    
+    </form>
+    
+    
+    
+    
+    
+    
+    <button type="button" class="btn btn-success btn-sm" onclick="location.href='<%=cpath%>/reviewList.do'">test</button>
+    
+    
+    
+    
     </div>    
     
   </div>

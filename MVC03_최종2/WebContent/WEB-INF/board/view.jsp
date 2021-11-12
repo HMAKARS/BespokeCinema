@@ -140,6 +140,7 @@
    <img src="https://file.mk.co.kr/meet/neds/2021/09/image_readtop_2021_931772_16329893494800394.jpg" class="img-1" alt="포스터">
 </div>
  
+ <!-- 유튜브 링크 -->
  <div>
   <iframe width="650" height="400" src="https://www.youtube.com/embed/BdkSkI61aGo?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=BdkSkI61aGo" 
   frameborder="8" style="position:absolute; left:800px; top:100px; "></iframe>
@@ -147,13 +148,17 @@
   
   <hr>
 
+<!-- import -->
+
+
+<!-- 포스터 와 감독, 영화배우 -->
   <table>
     <tr>
       <td class="poster">
         
         <h3 style=" font-size:35px; color: white;">이터널스</h3>
         
-        <p style="   color: white;">감독 : <span>클로이 자오</span></p>
+        <p style="   color: white;">감독 : <span><!-- =vo.movie_pos() %> --> 아무나</span></p>
         <p style="   color: white;">배우 : <span>안젤리나졸리, 마동석, 리차드매든</span></p>
         <p style="   color: white;">상영시간 : <span>155분</span></p>
         <p style="   color: white;">장르: <span>액션,드라마,판타지</span></p>
