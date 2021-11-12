@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import kr.smhrd.model.BoardDAO;
+import kr.smhrd.model.UserDAO;
 import kr.smhrd.model.UserVO;
 
 public class LoginController implements Controller{
@@ -25,7 +26,7 @@ public class LoginController implements Controller{
 		vo.setMb_pwd(pwd);
 		
 		// UserDAO -> BoardDAO
-		BoardDAO dao=new BoardDAO();
+		UserDAO dao=new UserDAO();
 		UserVO succ=dao.isLogin(vo);
 		if(succ!=null) { // 로그인 성공 -> 로그인 성공했다는 표시를 메모리(세션)에 해두어야 한다.
 			HttpSession session=request.getSession();

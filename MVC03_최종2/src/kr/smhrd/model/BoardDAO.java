@@ -59,19 +59,7 @@ public class BoardDAO {
 		session.commit(); 
 		session.close();  
 	}
-	public UserVO isLogin(UserVO vo) {
-		SqlSession session=sqlSessionFactory.openSession();
-		vo=session.selectOne("isLogin",vo);
-		session.close();
-		return vo;
-	}
-	public int memberInsert(UserVO vo) {
-	        SqlSession session = sqlSessionFactory.openSession();
-	        int cnt = session.insert("memberInsert", vo);
-	        session.commit();
-	        session.close();
-	        return cnt;
-	 }
+	
 }
 
 

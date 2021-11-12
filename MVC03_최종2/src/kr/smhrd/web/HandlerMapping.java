@@ -23,6 +23,8 @@ public class HandlerMapping {
 		mappings.put("/memberForm.do", new MemberFormController());
 		mappings.put("/memberInsert.do", new MemberInsertController());
 		
+		mappings.put("/reveiwList.do", new ReviewListController());
+		
 	}
 	//                               /boardList.do
 	public Controller getController(String key) {

@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import kr.smhrd.model.BoardDAO;
+import kr.smhrd.model.UserDAO;
 import kr.smhrd.model.UserVO;
 
 public class MemberInsertController implements Controller {
@@ -37,7 +38,7 @@ public class MemberInsertController implements Controller {
 		
 		
 		//DAO °´Ã¼»ý¼º
-		BoardDAO dao = new BoardDAO();
+		UserDAO dao = new UserDAO();
 		
 		UserVO vo = new UserVO();
 		vo.setMb_id(id);
