@@ -24,7 +24,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">Panel Heading</div>
     <div class="panel-body">Panel Content</div>
-    <div class="panel-footer">ÀÎ°øÁö´É À¶ÇÕ ¼­ºñ½º °³¹ßÀÚ°úÁ¤(ÃÖ¼±ÁÖ)</div>    
+    <div class="panel-footer">ì¸ê³µì§€ëŠ¥ ìœµí•© ì„œë¹„ìŠ¤ ê°œë°œìžê³¼ì •</div>    
   </div>
 </div>
 
